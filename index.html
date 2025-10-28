@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tư Duy Toán THCS — Chuẩn CT 2018 (Lớp 6–9)</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0KOVEMmg9zuQBQCpt7jGvr0L2vzaIVcUzALTBGbEt2zGHcvE/LFpart" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIOOTenBkWcxHswA_ekL8QSOTUthEjVSptVBigrlgoQ8okvOCoF" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.24.0"
+  }
+}
+</script>
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  /* ===== Custom Theme & Font Size ===== */
+  :root {
+    --moet-blue-1: #1d4ed8; /* TW Blue-700 */
+    --moet-blue-2: #2563eb; /* TW Blue-600 */
+    --moet-text-light: #ffffff;
+    --moet-text-sub: #e6effc;
+    --moet-shadow: 0 2px 8px rgba(0,0,0,.10);
+  }
+
+  .dark {
+    --moet-blue-1: #1e3a8a; /* TW Blue-900 */
+    --moet-blue-2: #1e40af; /* TW Blue-800 */
+    --moet-text-light: #f1f5f9;
+    --moet-text-sub: #cdd7f6;
+    --moet-shadow: 0 2px 10px rgba(0,0,0,.35);
+  }
+
+  .moet-header {
+    background: linear-gradient(135deg, var(--moet-blue-2), var(--moet-blue-1));
+    color: var(--moet-text-light);
+    box-shadow: var(--moet-shadow);
+  }
+  .moet-header :where(h1,h2,h3,p,small,strong,em,span,a) { 
+    color: inherit; 
+  }
+  .moet-header a { text-decoration: underline; }
+  .moet-header a:hover { text-decoration:none; opacity:.9; }
+
+  .moet-footer {
+    background: linear-gradient(135deg, var(--moet-blue-2), var(--moet-blue-1));
+    color: var(--moet-text-light);
+    text-align: center;
+    box-shadow: var(--moet-shadow);
+    padding: 12px 16px;
+  }
+  .moet-footer p { margin: 4px 0; color: var(--moet-text-light); }
+  .moet-footer em { color: var(--moet-text-sub); }
+  .moet-footer small { color: var(--moet-text-sub); }
+  .moet-footer a { color: var(--moet-text-light); text-decoration: underline; }
+  .moet-footer a:hover { text-decoration: none; opacity:.9; }
+  
+  .moet-subtle { 
+    color: var(--moet-text-sub); 
+    font-size: 0.8125rem; /* 13px */ 
+  }
+
+  /* Font Size Control */
+  html.font-size-sm { font-size: 14px; }
+  html.font-size-base { font-size: 16px; }
+  html.font-size-lg { font-size: 18px; }
+</style>
+</head>
+  <body class="bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-300 antialiased leading-relaxed text-base">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
